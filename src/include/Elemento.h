@@ -1,3 +1,10 @@
+/*
+ * 
+ *
+ *  Created on: 20/11/2020
+ *      Author: joao nogueira
+ */
+
 #include <iostream>
 
 template<typename Tipo>

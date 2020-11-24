@@ -1,3 +1,10 @@
+/*
+ * 
+ *
+ *  Created on: 20/11/2020
+ *      Author: joao nogueira
+ */
+
 #ifndef TERMINAL_H_
 #define TERMINAL_H_
 

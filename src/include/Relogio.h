@@ -1,3 +1,10 @@
+/*
+ * AnalisadorDeComando.h
+ *
+ *  Created on: 20/11/2020
+ *      Author: joao nogueira
+ */
+
 #ifndef RELOGIO_H_
 #define RELOGIO_H_
 

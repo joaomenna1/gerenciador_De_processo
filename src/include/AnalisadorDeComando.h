@@ -1,8 +1,8 @@
 /*
- * AnalisadorDeComando.h
+ * 
  *
- *  Created on: 26/04/2014
- *      Author: thiago
+ *  Created on: 20/11/2020
+ *      Author: joao nogueira
  */
 
 #ifndef ANALISADORDECOMANDO_H_

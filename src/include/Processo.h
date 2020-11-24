@@ -1,10 +1,9 @@
 /*
- * Processo.h
+ * 
  *
- *  Created on: Apr 25, 2014
- *      Author: decio
+ *  Created on: 20/11/2020
+ *      Author: joao nogueira
  */
-
 #ifndef PROCESSO_H_
 #define PROCESSO_H_
 

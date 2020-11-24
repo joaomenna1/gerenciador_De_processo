@@ -14,10 +14,10 @@
 
 using namespace std;
 
-void printMessage();
+void SendMessage();
 string getUserInput();
-bool executarHelp(string comando);
-void criarProcesso(vector<string> comando);
+bool HelpExecute(string comando);
+void ProcessCreate(vector<string> comando);
 
 GerenciadorDeProcessos g;
 AnalisadorDeComando *analisador = new AnalisadorDeComando();
@@ -26,7 +26,7 @@ void execute(string comando) {
 	vector<string> partesDoComando = analisador->separarParametros(comando);
 	string nomeDoComando = partesDoComando[0];
 	if (nomeDoComando == "help") {
-		executarHelp(comando);
+		HelpExecute(comando);
 	} else if (nomeDoComando == "start") {
 		//g.carregarEmMemoria();
 		//g.printarProntos();
@@ -34,7 +34,7 @@ void execute(string comando) {
 	} else if (nomeDoComando == "reset") {
 		//TODO: Zerar todos os processos e apresentar mensagem inicial novamente
 	} else if (nomeDoComando == "add") {
-		criarProcesso(partesDoComando);
+		ProcessCreate(partesDoComando);
 	} else if (nomeDoComando == "exit") {
 		exit(1);
 	}
@@ -52,7 +52,7 @@ void imprimirComandosDisponiveis() {
 	}
 }
 
-bool executarHelp(string comando) {
+bool HelpExecute(string comando) {
 	vector<string> partesDoComando = analisador->separarParametros(comando);
 	int numeroDeParametros = partesDoComando.size() - 1;
 	if (numeroDeParametros == 0) {
@@ -102,7 +102,7 @@ bool executarHelp(string comando) {
 }
 
 int main() {
-	printMessage();
+	SendMessage();
 	while (true) {
 		string comando = getUserInput();
 		bool comandoValido = analisador->validarComando(comando);
@@ -120,7 +120,7 @@ string getUserInput() {
 	return command;
 }
 
-void printMessage() {
+void SendMessage() {
 	// Mensagem em ascii art : Ger. Processos
 	cout
 			<< "   ____             ____                                                 "
@@ -141,7 +141,7 @@ void printMessage() {
 			<< " 	                                                                        "
 			<< std::endl;
 	cout << "" << std::endl;
-	cout << "Código em: https://github.com/thisenrose/GerenciadorDeProcessos"
+	cout << "Código em: https://github.com/joaomenna1"
 			<< endl;
 	cout << "Sintaxe: <help> ou <help> + <comando> ou <comando> + <parametros>"
 			<< endl;
@@ -149,7 +149,7 @@ void printMessage() {
 	imprimirComandosDisponiveis();
 }
 
-void criarProcesso(vector<string> comando) {
+void ProcessCreate(vector<string> comando) {
 	Processo p;
 
 	p.id.id = g.getTotalProcessos();

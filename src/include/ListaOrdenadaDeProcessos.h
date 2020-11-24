@@ -1,8 +1,8 @@
 /*
- * ListaDeProcessos.h
+ * AnalisadorDeComando.h
  *
- *  Created on: Apr 25, 2014
- *      Author: decio
+ *  Created on: 20/11/2020
+ *      Author: joao nogueira
  */
 
 #ifndef LISTADEPROCESSOS_H_

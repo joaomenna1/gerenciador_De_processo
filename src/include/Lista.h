@@ -1,3 +1,11 @@
+
+/*
+ * 
+ *
+ *  Created on: 20/11/2020
+ *      Author: joao nogueira
+ */
+
 #include "Elemento.h"
 #include <stdexcept>
 #include <string>

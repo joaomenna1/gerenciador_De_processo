@@ -1,8 +1,8 @@
 /*
  * Processo.cpp
  *
- *  Created on: Apr 25, 2014
- *      Author: decio
+ *   Created on: nov 21, 2020
+ *      Author: joao nogueira
  */
 
 #include "include/Processo.h"
